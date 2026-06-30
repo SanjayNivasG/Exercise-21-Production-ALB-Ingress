@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: dashboard-service
+  namespace: production
+spec:
+  selector:
+    app: dashboard
+  ports:
+  - port: 80
+    targetPort: 80
